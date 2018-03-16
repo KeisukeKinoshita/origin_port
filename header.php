@@ -18,7 +18,7 @@
         <script type="text/javascript" src="<?php get_template_directory_uri(); ?>/owl/owl.carousel.min.js"></script>
         <!-- owl動作させるため追加-->
         <script type="text/javascript" src="<?php get_template_directory_uri(); ?>/carousel.js"></script>
-
+        <?php wp_head(); ?>
     </head>
     <body>
         <header>
