@@ -223,7 +223,7 @@ article.first{
                 display:flex;
                 justify-content:center;
                 flex-wrap:wrap;
-                width:49%;
+                width:95%;
                 .iconbox{
                     display:flex;
                     justify-content:center;
@@ -234,7 +234,7 @@ article.first{
                     margin-top:9%;
                     img{
                         width:33%;
-                        height:6rem;
+                        height:4rem;
                     }
                 }
                 .description{
@@ -246,7 +246,7 @@ article.first{
                         text-align:center;
                         height:21%;
                         color:$one_color;
-                        font-size:23px;
+                        font-size:16px;
                         margin-top:5%;
                         margin-bottom:0;
                         letter-spacing:0.25rem;
@@ -261,54 +261,6 @@ article.first{
                     }
                 }
             }
-            #hc{
-                .iconbox{
-                    img{
-                        width:28%;
-                        height:61%;
-                        margin-top:1%;
-                        margin-right:4.5%;
-                        margin-left:3%;
-                    }
-                }
-                .description{
-                    p:last-of-type{
-                        font-size:17px;
-                    }
-                }
-            }
-            #js{
-                img{
-                    height:93%;
-                }
-            }
-            #wp{
-                img{
-                    width:33%;
-                    height:70%;
-                }
-                p:first-of-type{
-                    letter-spacing:0.1rem;
-                }
-                p:last-of-type{
-                    letter-spacing:0.02rem;
-                }
-            }
-            #ps{
-                img{
-                    width:38%;
-                    height:81%;
-                }
-                .description{
-                    p:first-of-type{
-                        letter-spacing:0.1rem;
-                    }
-                    p:last-of-type{
-                        font-size:16px;
-                        letter-spacing:0.01rem;
-                    }
-                }
-            }
         }
     }
     @media(min-width:551px){
@@ -320,11 +272,11 @@ article.first{
         margin-bottom:0.5%;
     }
     section{
-            width:95.5%;
+            width:95%;
             margin-bottom:2.5%;
             .five.columns{
                 background-color:white;
-                width:48.3%;
+                width:95.3%;
                 margin-left:3%;
                 display:flex;
                 flex-wrap:wrap;

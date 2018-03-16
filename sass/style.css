@@ -165,7 +165,7 @@ html .skill {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          width: 49%; }
+          width: 95%; }
           html .skill section .five.columns .iconbox {
             display: flex;
             justify-content: center;
@@ -176,7 +176,7 @@ html .skill {
             margin-top: 9%; }
             html .skill section .five.columns .iconbox img {
               width: 33%;
-              height: 6rem; }
+              height: 4rem; }
           html .skill section .five.columns .description {
             display: flex;
             flex-direction: column;
@@ -186,7 +186,7 @@ html .skill {
               text-align: center;
               height: 21%;
               color: #038f79;
-              font-size: 23px;
+              font-size: 16px;
               margin-top: 5%;
               margin-bottom: 0;
               letter-spacing: 0.25rem; }
@@ -196,32 +196,7 @@ html .skill {
               font-family: "メイリオ";
               line-height: 117%;
               letter-spacing: 0.01rem;
-              margin-bottom: 4%; }
-        html .skill section #hc .iconbox img {
-          width: 28%;
-          height: 61%;
-          margin-top: 1%;
-          margin-right: 4.5%;
-          margin-left: 3%; }
-        html .skill section #hc .description p:last-of-type {
-          font-size: 17px; }
-        html .skill section #js img {
-          height: 93%; }
-        html .skill section #wp img {
-          width: 33%;
-          height: 70%; }
-        html .skill section #wp p:first-of-type {
-          letter-spacing: 0.1rem; }
-        html .skill section #wp p:last-of-type {
-          letter-spacing: 0.02rem; }
-        html .skill section #ps img {
-          width: 38%;
-          height: 81%; }
-        html .skill section #ps .description p:first-of-type {
-          letter-spacing: 0.1rem; }
-        html .skill section #ps .description p:last-of-type {
-          font-size: 16px;
-          letter-spacing: 0.01rem; } }
+              margin-bottom: 4%; } }
   @media (min-width: 551px) {
     html .skill #skill_box {
       text-align: center;
@@ -230,11 +205,11 @@ html .skill {
       margin-top: 1rem;
       margin-bottom: 0.5%; }
     html .skill section {
-      width: 95.5%;
+      width: 95%;
       margin-bottom: 2.5%; }
       html .skill section .five.columns {
         background-color: white;
-        width: 48.3%;
+        width: 95.3%;
         margin-left: 3%;
         display: flex;
         flex-wrap: wrap;

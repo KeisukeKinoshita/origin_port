@@ -26,7 +26,7 @@
                 <div class="row">
                     <div id="title" class="four columns" >
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo" srcset="<?php echo get_template_directory_uri(); ?>/images/logo@2x.png">
+                            <a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo" srcset="<?php echo get_template_directory_uri(); ?>/images/logo@2x.png"></a>
                         </div>
                 </div>
                     <div id="icon" class="four columns">
@@ -37,9 +37,9 @@
                     <div id="menu" class="four columns">
                         <div>
                         <ul>
-                            <li><a href="<?php echo get_template_directory_uri(); ?>/skill"><span>Skills</span></a></li>
-                            <li><a href="<?php echo get_template_directory_uri(); ?>/work"><span>Work</span></a></li>
-                            <li><a href="<?php echo get_template_directory_uri(); ?>/contact"><span>Contact</span></a></li>
+                            <li><a href="<?php echo home_url(); ?>/skill"><span>Skills</span></a></li>
+                            <li><a href="<?php echo home_url(); ?>/work"><span>Work</span></a></li>
+                            <li><a href="<?php echo home_url(); ?>/contact"><span>Contact</span></a></li>
                         </ul>
                         </div>
                     </div>
