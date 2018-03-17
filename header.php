@@ -10,14 +10,14 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/skeleton.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/sass/style.css">
         <!-- owl carousel css-->
-        <link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/owl/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/owl/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl/assets/owl.theme.default.min.css">
         <!-- jquery -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- owl carousel js -->
-        <script type="text/javascript" src="<?php get_template_directory_uri(); ?>/owl/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/owl/owl.carousel.min.js"></script>
         <!-- owl動作させるため追加-->
-        <script type="text/javascript" src="<?php get_template_directory_uri(); ?>/carousel.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/carousel.js"></script>
         <?php wp_head(); ?>
     </head>
     <body>
@@ -38,7 +38,7 @@
                         <div>
                         <ul>
                             <li><a href="<?php echo home_url(); ?>/skill"><span>Skills</span></a></li>
-                            <li><a href="<?php echo home_url(); ?>/work"><span>Work</span></a></li>
+                            <li><a href="<?php echo home_url(); ?>/category/work"><span>Work</span></a></li>
                             <li><a href="<?php echo home_url(); ?>/contact"><span>Contact</span></a></li>
                         </ul>
                         </div>

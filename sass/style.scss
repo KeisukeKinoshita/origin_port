@@ -24,7 +24,7 @@ html{
     p{
         text-align:center;
     }
-
+}
 header{
     font-family:Abel;
     background-color:$sub_sub_color;
@@ -334,6 +334,14 @@ article.first{
         margin-top:3%;
         padding-bottom:4%;
         background-color: $sub_skill_color;
+
+        .box{
+            background-color:white;
+            margin-top:1.5%;
+        }
+        .box:last-of-type{
+            margin-top:4%;
+        }
         #work_title{
             text-align:center;
             color:white;
@@ -343,14 +351,7 @@ article.first{
                 margin-bottom:0;
             }
         }
-        .box{
-            background-color:white;
-            margin-top:1.5%;
-        }
-        .box:last-of-type{
-            margin-top:4%;
-        }
-        #work1{
+        .workbox{
             display:flex;
             flex-direction:row;
             flex-wrap:wrap;
@@ -415,91 +416,10 @@ article.first{
                         
                     }
                 }
-            div:last-of-type{
-                
-                width:100%;
-                
-                p{
-                color:$one_color;
-                text-align:center;
-                font-size:23px;
-                font-family:"しねきゃぷしょん";
-                margin-top:2.5%;
-                margin-bottom:0;
-                }
-            }
+
         }
-        #work2{
-            display:flex;
-            flex-direction:row;
-            flex-wrap:wrap;
-            .pc{
-                width:31.5%;
-                margin-top:1.5%;
-                margin-left:9%;
-                margin-right:11%;
-                .owl-carousel{
-                    display:flex;
-                    flex-direction:column;
-                    .owl-dots{
-                        display:flex;
-                        justify-content:left;
-                        margin-top:5%;
-                        margin-left:19%;
-                    }
-                    .owl-dot span{
-                        width:20px;
-                        height:3px;
-                        margin-top:10px;
-                        margin-right:2%;
-                        background-color:$sub_sub_color;
-                    }
-                    .owl-dot.active span{
-                        background-color:red;
-                    }
-                    img{
-                        height:36rem;
-                    }
-                }
-            }
-            .sp{
-                width:36.5%;
-                margin-top:1.5%;
-                    .owl-carousel{
-                        display:flex;
-                        flex-direction:column;
-                        .owl-stage-outer{
-                            margin-bottom:6%;
-                        }
-                        .owl-dots{
-                            display:flex;
-                            justify-content:left;
-                            margin-left:22%;
-                            margin-top:2%;
-                        }
-                        .owl-dot span{
-                            width:20px;
-                            height:3px;
-                            margin-top:10px;
-                            margin-right:2%;
-                            background-color:$sub_sub_color;
-                        }
-                        .owl-dot.active span{
-                            background-color:red;
-                        }
-                        img{
-                            height:35rem;
-                            width:100%;
-                        }
-                        img.small{
-                            width:32%;
-                        }
-                    }
-                }
-            div:last-of-type{
-                
+        .slide_title{
                 width:100%;
-                
                 p{
                 color:$one_color;
                 font-size:23px;
@@ -508,10 +428,9 @@ article.first{
                 margin-bottom:0;
                 }
             }
-        }
     }
     @media(max-width:550px){
-                .container{
+    .container{
             width:92%;
             padding: 0;
         }
@@ -533,7 +452,15 @@ article.first{
     .box:last-of-type{
         margin-top:2%;
     }
-    #work1{
+    #work_title{
+            text-align:center;
+            color:white;
+            font-size:18px;
+            p{
+                margin-bottom:0;
+            }
+        }
+	  .workbox{
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
@@ -597,10 +524,9 @@ article.first{
                         
                 }
             }
-        div:last-of-type{
-            
-            width:100%;
-            
+	  }
+    .slide_title{
+        width:100%;
             p{
             color:$one_color;
             font-size:9px;
@@ -608,83 +534,6 @@ article.first{
             margin-bottom:0;
             }
         }
-    }
-    #work2{
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        .pc{
-            width:27.5%;
-            margin-top:1.5%;
-            margin-left:15%;
-            margin-right:8%;
-            .owl-carousel{
-                display:flex;
-                flex-direction:column;
-                .owl-dots{
-                    display:flex;
-                    justify-content:left;
-                }
-                .owl-dot span{
-                    width:10px;
-                    height:3px;
-                    margin-top:10px;
-                    margin-right:2%;
-                    background-color:$sub_sub_color;
-                }
-                .owl-dot.active span{
-                    background-color:red;
-                }
-                img{
-                    height:14rem;
-                }
-            }
-        }
-        .sp{
-            width:38.8%;
-            margin-top:1.5%;
-                .owl-carousel{
-                    display:flex;
-                    flex-direction:column;
-                    .owl-stage-outer{
-                        margin-bottom:6%;
-                    }
-                    .owl-dots{
-                        display:flex;
-                        justify-content:left;
-                        margin-left:24%;
-                    }
-                    .owl-dot span{
-                        width:10px;
-                        height:3px;
-                        margin-top:10px;
-                        margin-right:2%;
-                        background-color:$sub_sub_color;
-                    }
-                    .owl-dot.active span{
-                        background-color:red;
-                    }
-                    img{
-                        height:14rem;
-                    }
-                    img.small{
-                        width:33%;
-                    }
-                        
-                }
-            }
-        div:last-of-type{
-            
-            width:100%;
-        
-            p{
-            color:$one_color;
-            font-size:9px;
-            font-family:"しねきゃぷしょん";
-            margin-bottom:0;
-            }
-        }
-    }
     }
 }
 .contact{
@@ -737,30 +586,28 @@ article.first{
     }
 }
 footer{
-    background-color:$sub_sub_color;
-    border-top:1px solid #626262;
-    @media(min-width:551px){
-        margin-top:4.5%;
-        p{
-            text-align: center;
-            margin-bottom: 0;
-            height:4rem;
-            font-size:18px;
-            padding-top:1%;
-            letter-spacing:0.1rem;
-            
+        background-color:$sub_sub_color;
+        border-top:1px solid #626262;
+        @media(min-width:551px){
+            margin-top:4.5%;
+            p{
+                text-align: center;
+                margin-bottom: 0;
+                height:4rem;
+                font-size:18px;
+                padding-top:1%;
+                letter-spacing:0.1rem;
+                
+            }
         }
-    }
-    @media(max-width:550px){
-        p{
-            text-align: center;
-            margin-bottom: 0;
-            height:1rem;
-            font-size:9px;
-            padding-top:1%;
-            letter-spacing:0.1rem;
-            
+        @media(max-width:550px){
+            p{
+                text-align: center;
+                margin-bottom: 0;
+                height:1rem;
+                font-size:9px;
+                padding-top:1%;
+                letter-spacing:0.1rem;
+            }
         }
-    }
-}
 }
