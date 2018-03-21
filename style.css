@@ -251,6 +251,10 @@ header {
     .skill .row:last-of-type {
       margin-bottom: 3%; } }
 
+.work form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 @media (min-width: 551px) {
   .work {
     margin-top: 3%;

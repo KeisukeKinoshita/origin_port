@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: work
+Template Name: search
 */
  get_header(); ?>
 <?php
@@ -26,14 +26,15 @@ Template Name: work
                 <p>MY WORK</p>
             </div>
         </div>
-        <form method="get" id="searchform" action='<?php bloginfo("url")?>'>
+        <!--<form method="get" id="searchform" action='<?php bloginfo("url")?>'>
             <label for="s" class="assistive-text">検索</label>
             <input type="text" name="s" id="s" placeholder="検索"/>
             <input type="submit" value="検索"/>
-        </form>
+        </form>-->
         <!-- url 管理画面の設定＞一般で設定されたurlを表示するものwp_optionsテーブルのhomeレコードから取得-->
-        <?php /*get_searchform();*/ ?>
-	    <?php if(have_posts()):
+        <?php get_search_form(); ?>
+        <h2><?php the_search_query();?>の検索結果</h2>
+	    <?php if(have_posts() && get_search_query()):
 			while(have_posts()): the_post();?>
 			    <div class="row">
 				    <div  class="twelve columns">
@@ -49,9 +50,9 @@ Template Name: work
                         </div>
                     </div>
                 </div>
-            <?php endwhile; ?>
-            <?php endif; ?>
-
+            <?php endwhile; else: ?>
+            <div>該当なし</div>
+        <?php endif; wp_reset_query();?>
     </div>
 </article>
 <?php get_footer(); ?>
